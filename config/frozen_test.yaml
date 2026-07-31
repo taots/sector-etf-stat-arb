@@ -1,0 +1,12 @@
+# Frozen test configuration — to be written after validation
+
+project:
+  name: sector-etf-stat-arb
+
+signal:
+  pca_window: 252
+  n_components: 3
+  residual_lookback: 20
+
+portfolio:
+  gross_exposure: 1.0

@@ -1,0 +1,47 @@
+project:
+  name: sector-etf-stat-arb
+  random_seed: 42
+
+universe:
+  benchmark: SPY
+  assets:
+    - XLB
+    - XLE
+    - XLF
+    - XLI
+    - XLK
+    - XLP
+    - XLU
+    - XLV
+    - XLY
+
+data:
+  start: "2004-01-01"
+  frequency: "1d"
+  adjusted: true
+
+periods:
+  development_start: "2004-01-01"
+  development_end: "2013-12-31"
+  validation_start: "2014-01-01"
+  validation_end: "2019-12-31"
+  test_start: "2020-01-01"
+
+signal:
+  pca_window: 252
+  n_components: 3
+  residual_lookback: 20
+  volatility_window: 60
+  signal_clip: 3.0
+  rebalance: "W-FRI"
+
+portfolio:
+  gross_exposure: 1.0
+  net_exposure_target: 0.0
+  max_abs_weight: 0.25
+  beta_window: 126
+  execution_lag_days: 1
+
+costs:
+  transaction_cost_bps: 5
+  annual_short_borrow_bps: 200

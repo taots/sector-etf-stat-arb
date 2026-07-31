@@ -1,0 +1,18 @@
+[project]
+name = "sector-etf-stat-arb"
+version = "0.1.0"
+description = "Leakage-aware sector ETF statistical arbitrage research"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.4"
+]
