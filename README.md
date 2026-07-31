@@ -11,6 +11,14 @@ This project demonstrates a closed-form research workflow with:
 - cost-aware backtesting with turnover and short borrow cost;
 - automated tests and demo figure generation.
 
+## Disclaimer
+
+⚠️ This repository and its content are for **educational and research purposes only**.
+
+- Nothing contained in this project constitutes financial, investment, legal, or tax advice.
+- Do not use this software or its outputs to make real-world trading or investment decisions.
+- The author(s) accept no responsibility or liability for any financial losses, trading damages, or risks incurred by using this code.
+
 > Research and educational use only. Not investment advice.
 
 ## Demo
